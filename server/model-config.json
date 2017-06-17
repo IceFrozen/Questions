@@ -1,0 +1,56 @@
+ {
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "../common/statistics",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongo",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+      }
+    } 
+  },
+  "ACL": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Ask": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Question": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Group": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}

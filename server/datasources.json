@@ -1,0 +1,17 @@
+{
+  "mem": {
+    "name": "mem",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "127.0.0.1",
+    "port": 27018,
+    "url": "mongodb://127.0.0.1/question",
+    "database": "question",
+    "password": "",
+    "name": "mongo",
+    "user": "",
+    "connector": "mongodb",
+    "allowExtendedOperators":true
+  }
+}
